@@ -74,7 +74,7 @@ These additional letters may require a full redesign for inclusion.
 | N/A       | Ғғ (gh)  |
 | N/A       | Ҳҳ (h)   |
 | N/A       | Ӣӣ (ī)   |
-| N/A       | Ққ (q)   |
+| `kq`      | Ққ (q)   |
 | `ng`      | Ңң (ng)  |
 | `uw`      | Ұұ (ū)   |
 | `uv`      | Ӯӯ (ū)   |
