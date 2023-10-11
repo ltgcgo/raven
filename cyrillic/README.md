@@ -64,3 +64,20 @@
 | `yu`      | Юю (yu)  | Юю (yu)  | Юю (yu)  | Юю (yu)  | Юю (yu)  |          |
 | `q qh ya` | Яя (ya)  | Яя (ya)  | Яя (ya)  | Яя (ya)  | Яя (ya)  |          |
 | `qz`      |          | '        | '        |          |          |          |
+
+### Additional keys
+These additional letters may require a full redesign for inclusion.
+
+| Keymap    | Letter   |
+| --------- | -------- |
+| N/A       | Әә (ǎ)   |
+| N/A       | Ғғ (gh)  |
+| N/A       | Ҳҳ (h)   |
+| N/A       | Ӣӣ (ī)   |
+| N/A       | Ққ (q)   |
+| `ng`      | Ңң (ng)  |
+| `uw`      | Ұұ (ū)   |
+| `uv`      | Ӯӯ (ū)   |
+| N/A       | Ҳҳ (h)   |
+| N/A       | Һһ (h)   |
+| N/A       | Ҷҷ (j)   |
