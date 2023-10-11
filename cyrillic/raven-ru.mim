@@ -1,0 +1,138 @@
+;; raven-ru.mim -- Quick pan-Cyrillic transliteration keymap on QWERTY
+;; Version 0.1
+;; Copyright (C) 2023
+;; Licensed under CC BY-NC-SA 4.0
+;; Lumière Élevé <ble-m@ltgc.cc>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+;; Map based on cyrillic-translit part from emacs leim by
+;; Ognyan Kulev <ogi@fmi.uni-sofia.bg> and Anton Zinoviev <anton@lml.bas.bg>.
+;; And based on ru-translit by Maxim Treskin <zerthurd@gmail.com>.
+;; And based on Yasherty keyboard layout.
+
+
+(input-method ru raven)
+
+(description
+ "Intuitively transliterated layout, also focusing on speed. No
+character needs more than two keys to type. Most convenient for
+entering Russian, but all Cyrillic characters are included.
+Should handle most cases as fast as possible.
+")
+
+(title "Жr")
+
+(map
+ (map
+  ("a" ?а)  ("A" ?А)
+  ("b" ?б)  ("B" ?Б)
+  ("v" ?в)  ("V" ?В)
+  ("vd" ?в) ("VD" ?В) ("Vd" ?В)
+  ("ww" ?в) ("WW" ?В) ("Ww" ?В)
+  ("g" ?г)  ("G" ?Г)
+  ("gd" ?г) ("GD" ?Г) ("GD" ?Г)
+  ("hh" ?г) ("HH" ?Г) ("Hh" ?Г)
+  ("gg" ?ґ) ("GG" ?Ґ) ("Gg" ?Ґ)
+  ("gh" ?ѓ) ("GH" ?Ѓ) ("Gh" ?Ѓ)
+  ("d" ?д)  ("D" ?Д)
+  ("dq" ?д) ("DQ" ?Д) ("Dq" ?Д)
+  ("dd" ?ђ) ("DD" ?Ђ) ("Dd" ?Ђ)
+  ("dz" ?ђ) ("DZ" ?Ђ) ("Dz" ?Ђ)
+  ("e" ?е)  ("E" ?Е)
+  ("eh" ?е) ("EH" ?Е) ("Eh" ?Е)
+  ("je" ?є) ("JE" ?Є) ("Je" ?Є)
+  ("yo" ?ё) ("YO" ?Ё) ("Yo" ?Ё)
+  ("zh" ?ж) ("ZH" ?Ж) ("Zh" ?Ж)
+  ("zz" ?ж) ("ZZ" ?Ж) ("Zz" ?Ж)
+  ("z" ?з)  ("Z" ?З)
+  ("zd" ?з) ("ZD" ?З) ("Zq" ?З)
+  ("ds" ?ѕ) ("DS" ?Ѕ) ("Ds" ?Ѕ)
+  ("i" ?и)  ("I" ?И)
+  ("ih" ?и) ("IH" ?И) ("Ih" ?И)
+  ("yy" ?и) ("YY" ?И) ("Yy" ?И)
+  ("ii" ?і) ("II" ?І) ("Ii" ?І)
+  ("yi" ?і) ("YI" ?І) ("Yi" ?І)
+  ("ji" ?ї) ("JI" ?Ї) ("Ji" ?Ї)
+  ("j" ?й)  ("J" ?Й)
+  ("jh" ?й) ("JH" ?Й) ("Jh" ?Й)
+  ("jy" ?й) ("JY" ?Й) ("Jy" ?Й)
+  ("jj" ?ј) ("JJ" ?Ј) ("Jj" ?Ј)
+  ("k" ?к)  ("K" ?К)
+  ("kd" ?к) ("KD" ?К) ("Kd" ?К)
+  ("l" ?л)  ("L" ?Л)
+  ("ld" ?л) ("LD" ?Л) ("Ld" ?Л)
+  ("lj" ?љ) ("LJ" ?Љ) ("Lj" ?Љ)
+  ("lk" ?љ) ("LK" ?Љ) ("Lk" ?Љ)
+  ("m" ?м)  ("M" ?М)
+  ("n" ?н)  ("N" ?Н)
+  ("nd" ?н) ("ND" ?Н) ("Nd" ?Н)
+  ("nj" ?њ) ("NJ" ?Њ) ("Nj" ?Њ)
+  ("nk" ?њ) ("NK" ?Њ) ("Nk" ?Њ)
+  ("o" ?о)  ("O" ?О)
+  ("x" ?ө)  ("X" ?Ө)
+  ("p" ?п)  ("P" ?П)
+  ("r" ?р)  ("R" ?Р)
+  ("s" ?с)  ("S" ?С)
+  ("sd" ?с) ("SD" ?С) ("Sd" ?С)
+  ("t" ?т)  ("T" ?Т)
+  ("td" ?т) ("TD" ?Т) ("TD" ?Т)
+  ("tj" ?ћ) ("TJ" ?Ћ) ("Tj" ?Ћ)
+  ("tt" ?ћ) ("TT" ?Ћ) ("Tt" ?Ћ)
+  ("kj" ?ќ) ("KJ" ?Ќ) ("Kj" ?Ќ)
+  ("kk" ?ќ) ("KK" ?Ќ) ("Kk" ?Ќ)
+  ("u" ?у)  ("U" ?У)
+  ("uh" ?у) ("UH" ?У) ("Uh" ?У)
+  ("iu" ?ў) ("IU" ?Ў) ("Iu" ?Ў)
+  ("uu" ?ў) ("UU" ?Ў) ("Uu" ?Ў)
+  ("uy" ?ү) ("UY" ?Ү) ("Uy" ?Ү)
+  ("vv" ?ү) ("VV" ?Ү) ("Vv" ?Ү)
+  ("f" ?ф)  ("F" ?Ф)
+  ("h" ?х)  ("H" ?Х)
+  ("hd" ?х) ("HD" ?Х) ("Hd" ?Х)
+  ("c" ?ц)  ("C" ?Ц)
+  ("cd" ?ц) ("CD" ?Ц) ("Cd" ?Ц)
+  ("cc" ?ч) ("CC" ?Ч) ("Cc" ?Ч)
+  ("ch" ?ч) ("CH" ?Ч) ("Ch" ?Ч)
+  ("dc" ?џ) ("DC" ?Џ) ("Dc" ?Џ)
+  ("dj" ?џ) ("DJ" ?Џ) ("Dj" ?Џ)
+  ("sh" ?ш) ("SH" ?Ш) ("Sh" ?Ш)
+  ("ss" ?ш) ("SS" ?Ш) ("Ss" ?Ш)
+  ("w" ?щ) ("W" ?Щ)
+  ("sw" ?щ) ("SW" ?Щ) ("Sw" ?Щ)
+  ("wd" ?щ) ("WD" ?Щ) ("Wd" ?Щ)
+  ("qa" ?ъ) ("QA" ?Ъ) ("Qa" ?Ъ)
+  ("y" ?ы)  ("Y" ?Ы)
+  ("yh" ?ы) ("YH" ?Ы) ("Yh" ?Ы)
+  ("yj" ?ы) ("YJ" ?Ы) ("Yj" ?Ы)
+  ("qq" ?ь) ("QQ" ?Ь) ("Qq" ?Ь)
+  ("ee" ?э) ("EE" ?Э) ("Ee" ?Э)
+  ("yu" ?ю) ("YU" ?Ю) ("Yu" ?Ю)
+  ("q" ?я)  ("Q" ?Я)
+  ("qh" ?я) ("QH" ?Я) ("Qh" ?Я)
+  ("ya" ?я) ("YA" ?Я) ("Ya" ?Я)
+  ("qz" ?') ("QZ" ?') ("Qz" ?')
+ )
+)
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
