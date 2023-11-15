@@ -15,9 +15,16 @@
   * If on IBus, run `ibus restart`.
 
 ### For [Rime](https://github.com/rime)
-*For Windows instructions, check the official Rime user guide. Machine translators might be required.*
+#### Linux
 * Get the required `.yaml` files. Check for files ending in `.schema.yaml`, `.dict.yaml` and `.custom.yaml`.
 * Copy the `.yaml` files to `~/.config/ibus/rime/`.
 * (Optional) Customize the new schema as you see fit.
 * Enable the new schema in `~/.config/ibus/rime/default.custom.yaml`.
 * Redeploy Rime via `touch ~/.config/ibus/rime/; ibus restart`.
+
+#### Windows
+* Get the required `.yaml` files. Check for files ending in `.schema.yaml`, `.dict.yaml` and `.custom.yaml`.
+* Copy the `.yaml` files to `%APPDATA%\\Rime`.
+* (Optional) Customize the new schema as you see fit.
+* Enable the new schema in `%APPDATA%\\Rime\\default.custom.yaml`.
+* Redeploy Rime via start menu or right-click menu of the taskbar icon.
