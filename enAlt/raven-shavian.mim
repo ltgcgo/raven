@@ -40,7 +40,7 @@ character needs more than two keys to type. Designed for Shavian.
   ("ei" ?𐑱) ("ai" ?𐑲) ("oi" ?𐑶) ("eu" ?𐑴) ("ou" ?𐑴) ("au" ?𐑬)
   ("ir" ?𐑾) ("er" ?𐑺) ("ur" ?𐑫𐑩)
   ;; Shavian vowel ligatures and specials
-  ("aR" ?𐑸) ("oR" ?𐑹) ("eR" ?𐑼) ("iR" ?𐑽) ("yu" ?𐑿)
+  ("aR" ?𐑸) ("oR" ?𐑹) ("eR" ?𐑼) ("Er" ?𐑻) ("ER" ?𐑻) ("iR" ?𐑽) ("yu" ?𐑿)
   ("ax" ?·) ("ex" ?·) ("ix" ?·) ("ox" ?·) ("ux" ?·)
   ;; Voiceless-voiced consonant pairs
   ("p" ?𐑐)  ("b" ?𐑚)  ("t" ?𐑑) ("d" ?𐑛) ("k" ?𐑒) ("g" ?𐑜) ("s" ?𐑕) ("z" ?𐑟)
