@@ -33,7 +33,7 @@ character needs more than two keys to type. Designed for Shavian.
   ;; Short vowels
   ("A" ?𐑨)  ("e" ?𐑧)  ("eh" ?𐑧) ("EE" ?𐑧) ("Ee" ?𐑧) ("i" ?𐑦)  ("ih" ?𐑦)
   ("o" ?𐑪)  ("oh" ?𐑪) ("a" ?𐑳)  ("ah" ?𐑳) ("u" ?𐑫)  ("uh" ?𐑫) ("E" ?𐑩)
-  ("I" ?𐑦)  ("U" ?𐑫)
+  ("Eh" ?𐑩) ("I" ?𐑦)  ("U" ?𐑫)
   ;; Long vowels
   ("ii" ?𐑰) ("oo" ?𐑷) ("ee" ?𐑻) ("uu" ?𐑵) ("aa" ?𐑭)
   ;; Diphthongs
