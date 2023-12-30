@@ -12,6 +12,10 @@
 4. Use stream breakers where single-letter mappings cause confusion.
 
 ## Keymap
+> **Warning**
+> 
+> This key map is made obsolete. A newer keymap is being designed.
+
 | Keymap    | RU       | UK       | BE       | MN       | BG       | MK/BS... |
 | --------- | -------- | -------- | -------- | -------- | -------- | -------- |
 | `a`       | Аа (a)   | Аа (a)   | Аа (a)   | Аа (a)   | Аа (a)   | Аа (a)   |

@@ -1,0 +1,62 @@
+;; raven-shavian.mim - Quick Shavian transliteration keymap
+;; Version 0.1
+;; Copyright (C) 2023
+;; Licensed under CC BY-NC-SA 4.0
+;; Lumière Élevé <ble-m@ltgc.cc>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method en r_shavian)
+
+(description
+ "Intuitively transliterated layout, also focusing on speed. No
+character needs more than two keys to type. Designed for Shavian.
+")
+
+(title "𐑖s")
+
+(map
+ (map
+  ;; Short vowels
+  ("A" ?𐑨)  ("e" ?𐑧)  ("eh" ?𐑧) ("EE" ?𐑧) ("Ee" ?𐑧) ("i" ?𐑦)  ("ih" ?𐑦)
+  ("o" ?𐑪)  ("oh" ?𐑪) ("a" ?𐑳)  ("ah" ?𐑳) ("u" ?𐑫)  ("uh" ?𐑫) ("E" ?𐑩)
+  ("I" ?𐑦)  ("U" ?𐑫)
+  ;; Long vowels
+  ("ii" ?𐑰) ("oo" ?𐑷) ("ee" ?𐑻) ("uu" ?𐑵) ("aa" ?𐑭)
+  ;; Diphthongs
+  ("ei" ?𐑱) ("ai" ?𐑲) ("oi" ?𐑶) ("eu" ?𐑴) ("ou" ?𐑴) ("au" ?𐑬)
+  ("ir" ?𐑾) ("er" ?𐑺) ("ur" ?𐑫𐑩)
+  ;; Shavian vowel ligatures and specials
+  ("aR" ?𐑸) ("oR" ?𐑹) ("eR" ?𐑼) ("iR" ?𐑽) ("yu" ?𐑿)
+  ("ax" ?·) ("ex" ?·) ("ix" ?·) ("ox" ?·) ("ux" ?·)
+  ;; Voiceless-voiced consonant pairs
+  ("p" ?𐑐)  ("b" ?𐑚)  ("t" ?𐑑) ("d" ?𐑛) ("k" ?𐑒) ("g" ?𐑜) ("s" ?𐑕) ("z" ?𐑟)
+  ("f" ?𐑓)  ("v" ?𐑝)  ("T" ?𐑔) ("D" ?𐑞) ("S" ?𐑖) ("Z" ?𐑠) ("C" ?𐑗) ("j" ?𐑡)
+  ("q" ?𐑑𐑮) ("Q" ?𐑛𐑮) ("c" ?𐑑𐑕) ("J" ?𐑛𐑟)
+  ;; Other consonants
+  ("h" ?𐑣) ("m" ?𐑥) ("n" ?𐑯) ("N" ?𐑙) ("l" ?𐑤) ("r" ?𐑮) ("y" ?𐑘) ("w" ?𐑢)
+  ("H" ?𐑣)
+ )
+)
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
