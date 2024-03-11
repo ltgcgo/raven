@@ -1,0 +1,62 @@
+;; raven-bepa.mim - Quick BEPA transliteration keymap
+;; Version 0.1
+;; Copyright (C) 2023
+;; Licensed under CC BY-NC-SA 4.0
+;; Lumière Élevé <ble-m@ltgc.cc>
+;; Bauhinia Inkwell <bauhinia-inkwell@ltgc.cc>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method en r_bepa)
+
+(description
+ "Intuitively transliterated layout, also focusing on speed. No
+character needs more than two keys to type. Designed for BEPA.
+")
+
+(title "əB")
+
+(map
+ (map
+  ;; Short vowels
+  ("A" ?æ)  ("e" ?ɛ)  ("eh" ?ɛ) ("EE" ?e) ("Ee" ?e) ("i" ?ɪ)  ("ih" ?ɪ)
+  ("o" ?ɒ)  ("oh" ?ɒ) ("a" ?ʌ)  ("ah" ?ʌ) ("u" ?ʊ)  ("uh" ?ʊ) ("E" ?ə)
+  ("Eh" ?ə) ("I" ?i)  ("U" ?u)
+  ;; Long vowels
+  ("ii" "iː") ("oo" "ɔː") ("ee" "ɜː") ("uu" "uː") ("aa" "ɑː")
+  ;; Diphthongs
+  ("ei" "eɪ") ("ai" "aɪ") ("oi" "ɔɪ") ("eu" "əʊ") ("ou" "oʊ") ("au" "aʊ")
+  ("ir" "ɪə") ("er" "ɛə") ("ur" "ʊə")
+  ;; Shavian vowel ligatures and specials
+  ("aR" "ɑːr") ("oR" "ɔːr") ("eR" "ɛər") ("Er" "ər") ("ER" "ɜːr") ("iR" "ɪər") ("yU" "juː")
+  ;; Voiceless-voiced consonant pairs
+  ("p" ?p)  ("b" ?b)  ("t" ?t) ("d" ?d) ("k" ?k) ("g" ?g) ("s" ?s) ("z" ?z)
+  ("f" ?f)  ("v" ?v)  ("T" ?θ) ("D" ?ð) ("S" ?ʃ) ("Z" ?ʒ) ("C" ?tʃ) ("j" ?dʒ)
+  ("q" "tr") ("Q" "dr") ("c" "ts") ("J" "dz")
+  ;; Other consonants
+  ("h" ?h) ("m" ?m) ("n" ?n) ("N" ?ŋ) ("l" ?l) ("r" ?r) ("y" ?j) ("w" ?w)
+  ("H" ?x)
+ )
+)
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:

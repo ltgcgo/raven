@@ -1,0 +1,62 @@
+;; raven-deseret.mim - Quick Deseret transliteration keymap
+;; Version 0.1
+;; Copyright (C) 2023
+;; Licensed under CC BY-NC-SA 4.0
+;; Lumière Élevé <ble-m@ltgc.cc>
+;; Bauhinia Inkwell <bauhinia-inkwell@ltgc.cc>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method en r_deseret)
+
+(description
+ "Intuitively transliterated layout, also focusing on speed. No
+character needs more than two keys to type. Designed for Deseret.
+")
+
+(title "𐐼d")
+
+(map
+ (map
+  ;; Short vowels
+  ("A" ?𐐰)  ("e" ?𐐯)  ("eh" ?𐐯) ("EE" ?𐐯) ("Ee" ?𐐯) ("i" ?𐐮)  ("ih" ?𐐮)
+  ("o" ?𐐱)  ("oh" ?𐐱) ("a" ?𐐲)  ("ah" ?𐐲) ("u" ?𐐳)  ("uh" ?𐐳) ("E" ?𐐲)
+  ("Eh" ?𐐲) ("I" ?𐐨)  ("U" ?𐐭)
+  ;; Long vowels
+  ("ii" ?𐐨) ("oo" ?𐐫) ("ee" "𐐲𐑉") ("uu" ?𐐭) ("aa" ?𐐪)
+  ;; Diphthongs
+  ("ei" ?𐐩) ("ai" ?𐐴) ("oi" ?𐑎) ("eu" ?𐐬) ("ou" ?𐐬) ("au" ?𐐵)
+  ("ir" "𐐮𐐲") ("er" "𐐯𐑉") ("ur" "𐐳𐐲")
+  ;; Shavian vowel ligatures and specials
+  ("aR" "𐐪𐑉") ("oR" "𐐫𐑉") ("eR" "𐐯𐑉") ("Er" "𐐲𐑉") ("ER" "𐐲𐑉") ("iR" "𐐮𐐲𐑉") ("yU" ?𐑏)
+  ;; Voiceless-voiced consonant pairs
+  ("p" ?𐐹)  ("b" ?𐐺)  ("t" ?𐐻) ("d" ?𐐼) ("k" ?𐐿) ("g" ?𐑀) ("s" ?𐑅) ("z" ?𐑆)
+  ("f" ?𐑁)  ("v" ?𐑂)  ("T" ?𐑃) ("D" ?𐑄) ("S" ?𐑇) ("Z" ?𐑈) ("C" ?𐐽) ("j" ?𐐾)
+  ("q" "𐐻𐑉") ("Q" "𐐼𐑉") ("c" "𐐻𐑅") ("J" "𐐼𐑆")
+  ;; Other consonants
+  ("h" ?𐐸) ("m" ?𐑋) ("n" ?𐑌) ("N" ?𐑍) ("l" ?𐑊) ("r" ?𐑉) ("y" ?𐐷) ("w" ?𐐶)
+  ("H" ?𐐸)
+ )
+)
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
