@@ -44,7 +44,7 @@ character needs more than two keys to type. Designed for BEPA.
   ("aR" "ɑːr") ("oR" "ɔːr") ("eR" "ɛər") ("Er" "ər") ("ER" "ɜːr") ("iR" "ɪər") ("yU" "juː")
   ;; Voiceless-voiced consonant pairs
   ("p" ?p)  ("b" ?b)  ("t" ?t) ("d" ?d) ("k" ?k) ("g" ?g) ("s" ?s) ("z" ?z)
-  ("f" ?f)  ("v" ?v)  ("T" ?θ) ("D" ?ð) ("S" ?ʃ) ("Z" ?ʒ) ("C" ?tʃ) ("j" ?dʒ)
+  ("f" ?f)  ("v" ?v)  ("T" ?θ) ("D" ?ð) ("S" ?ʃ) ("Z" ?ʒ) ("C" "tʃ") ("j" "dʒ")
   ("q" "tr") ("Q" "dr") ("c" "ts") ("J" "dz")
   ;; Other consonants
   ("h" ?h) ("m" ?m) ("n" ?n) ("N" ?ŋ) ("l" ?l) ("r" ?r) ("y" ?j) ("w" ?w)
