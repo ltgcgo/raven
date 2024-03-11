@@ -49,6 +49,8 @@ character needs more than two keys to type. Designed for BEPA.
   ;; Other consonants
   ("h" ?h) ("m" ?m) ("n" ?n) ("N" ?ŋ) ("l" ?l) ("r" ?r) ("y" ?j) ("w" ?w)
   ("H" ?x)
+  ;; Stress
+  ("x" ?ˈ) ("X" ?ˌ)
  )
 )
 
