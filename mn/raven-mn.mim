@@ -1,0 +1,48 @@
+;; raven-mongolian.mim - Quick traditional Mongolian transliteration keymap on QWERTY
+;; Version 0.1
+;; Copyright (C) 2023
+;; Licensed under CC BY-NC-SA 4.0
+;; Bauhinia Inkwell <bauhinia-inkwell@ltgc.cc>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method mn r_mongolian)
+
+(description
+ "Intuitively transliterated layout, also focusing on speed. No
+character needs more than two keys to type. Designed for traditional Mongolian.
+")
+
+(title "ᠮm")
+
+(map
+ (map
+  ("a" ?ᠠ) ("e" ?ᠡ) ("i" ?ᠡ) ("o" ?ᠣ) ("u" ?ᠤ) ("O" ?ᠥ) ("U" ?ᠦ) ("E" ?ᠧ)
+  ("n" ?ᠨ) ("N" ?ᠩ) ("b" ?ᠪ) ("h" ?ᠬ) ("g" ?ᠭ) ("m" ?ᠮ) ("l" ?ᠯ)
+  ("s" ?ᠰ) ("S" ?ᠱ) ("t" ?ᠲ) ("d" ?ᠳ) ("c" ?ᠴ) ("j" ?ᠵ) ("y" ?ᠶ) ("r" ?ᠷ)
+  ("p" ?ᠫ) ("w" ?ᠸ) ("f" ?ᠹ) ("k" ?ᠺ) ("C" ?ᠼ) ("J" ?ᠽ)
+  ("x" ?ᠾ) ("lh" ?ᡀ) ("zh" ?ᡁ) ("ch" ?ᡂ) ("sh" ?ᠱ) ("rh" ?ᠿ)
+ )
+)
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:

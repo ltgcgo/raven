@@ -1,0 +1,56 @@
+;; raven-arabic.mim - Quick pan-Arabic transliteration keymap on QWERTY
+;; Version 0.1
+;; Copyright (C) 2023
+;; Licensed under CC BY-NC-SA 4.0
+;; Bauhinia Inkwell <bauhinia-inkwell@ltgc.cc>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method ar r_arabic)
+
+(description
+ "Intuitively transliterated layout, also focusing on speed. No
+character needs more than two keys to type. Most convenient for
+entering Russian, but all Cyrillic characters are included.
+Should handle most cases as fast as possible.
+")
+
+(title "اa")
+
+(map
+ (map
+  ;; Basic letters
+  ("a" ?ا) ("b" ?ب) ("p" ?پ) ("t" ?ت) ("T" ?ٹ) ("C" ?ث) ("j" ?ج) ("c" ?چ) ("h" ?ح) ("K" ?خ) ("d" ?د) ("D" ?ڈ) ("Z" ?ذ) ("r" ?ر) ("R" ?ڑ) ("z" ?ز) ("X" ?ژ) ("s" ?س) ("x" ?ش) ("S" ?ص)
+  ("J" ?ض) ("v" ?ط) ("V" ?ظ) ("e" ?ع) ("G" ?غ) ("f" ?ف) ("q" ?ق) ("k" ?ک) ("g" ?گ) ("l" ?ل) ("m" ?م) ("n" ?ن) ("N" ?ں) ("o" ?ہ) ("w" ?و) ("H" ?ھ) ("u" ?ء) ("i" ?ی) ("y" ?ے)
+  ;; Vowels and diacritics
+  ("Y" ?َ) ("I" ?ِ) ("P" ?ُ) ("~" ?ً) ("M" ?٘) ("W" ?ّ) (Q"" ?ْ) ("E" ?ٰ) ("O" ?ۃ)
+  ;; Letters with hamza
+  ("A" ?آ) ("U" ?ئ)
+  ;; Numerals
+  ("0" ?۰) ("1" ?۱) ("2" ?۲) ("3" ?۳) ("4" ?۴) ("5" ?۵) ("6" ?۶) ("7" ?۷) ("8" ?۸) ("9" ?۹)
+  ;; Punctuations
+  ("," ?،) ("." ?۔) (";" ?؛) ("?" ?؟)
+ )
+)
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
