@@ -38,7 +38,7 @@ character needs more than two keys to type. Designed for Shavian.
   ("ii" ?𐑰) ("oo" ?𐑷) ("ee" ?𐑻) ("uu" ?𐑵) ("aa" ?𐑭)
   ;; Diphthongs
   ("ei" ?𐑱) ("ai" ?𐑲) ("oi" ?𐑶) ("eu" ?𐑴) ("ou" ?𐑴) ("au" ?𐑬)
-  ("ir" ?𐑾) ("er" ?𐑺) ("ur" "𐑫𐑩")
+  ("ir" ?𐑾) ("er" ?𐑺) ("ur" "𐑫𐑼")
   ;; Shavian vowel ligatures and specials
   ("aR" ?𐑸) ("oR" ?𐑹) ("eR" ?𐑺) ("Er" ?𐑼) ("ER" ?𐑻) ("iR" ?𐑽) ("yU" ?𐑿)
   ("ax" ?·) ("ex" ?·) ("ix" ?·) ("ox" ?·) ("ux" ?·)
